@@ -5,28 +5,185 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Coffee House</title>
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
 <div class="logo">&#9749; Coffee House</div>
 <nav>
 <ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Menu</a></li>
-<li><a href="#">Contact</a></li>
+<li><a href="#home">Home</a></li>
+<li><a href="#video">Our Story</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
 </header>
-<main>
-<div class="overlay">
+<section id="home" class="hero">
+<div class="hero-overlay">
+<p class="tagline">Crafted with love, served with warmth</p>
 <h1>Welcome to Coffee House</h1>
-<p>We brew the finest coffee made from hand-picked beans sourced from the best farms around the world. Come in, relax, and enjoy a perfect cup made just for you.</p>
-<a href="#" class="btn">Explore Menu</a>
+<p class="hero-desc">We brew the finest coffee made from hand-picked beans sourced from the best farms around the world. Come in, pull up a chair, and let the aroma do the rest.</p>
+<a href="#menu" class="btn">Explore Our Menu</a>
 </div>
-</main>
+</section>
+<section id="video" class="video-section">
+<div class="section-header">
+<h2>Watch Us Brew</h2>
+<p>Every cup tells a story. Here's a little peek into the love and craft that goes into every single one.</p>
+</div>
+<div class="video-wrapper">
+<iframe
+src="https://www.youtube.com/embed/YDpPMUFQBFg?autoplay=0&rel=0&modestbranding=1"
+title="Coffee brewing video"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+</div>
+</section>
+<section id="menu" class="menu-section">
+<div class="section-header light">
+<h2>Our Menu</h2>
+<p>Made fresh, made for you. Every item here is something we'd happily drink ourselves.</p>
+</div>
+<div class="menu-category">
+<h3>&#9749; Hot Drinks</h3>
+<div class="menu-grid">
+<div class="menu-card">
+<div class="menu-emoji">☕</div>
+<div class="menu-info">
+<h4>Classic Espresso</h4>
+<p>Bold, rich, and straight to the point. Our single-origin espresso is the heart of everything we do.</p>
+<div class="menu-footer">
+<span class="tag">Bestseller</span>
+<span class="price">₹120</span>
+</div>
+</div>
+</div>
+<div class="menu-card">
+<div class="menu-emoji">🥛</div>
+<div class="menu-info">
+<h4>Creamy Cappuccino</h4>
+<p>Equal parts espresso, steamed milk, and foam. Silky, comforting, and honestly hard to put down.</p>
+<div class="menu-footer">
+<span class="tag">Morning Fav</span>
+<span class="price">₹160</span>
+</div>
+</div>
+</div>
+<div class="menu-card">
+<div class="menu-emoji">🍵</div>
+<div class="menu-info">
+<h4>Masala Chai Latte</h4>
+<p>A warm hug in a cup. Spiced with cardamom, ginger, and cinnamon — our barista's personal favourite on a rainy day.</p>
+<div class="menu-footer">
+<span class="tag">Barista's Pick</span>
+<span class="price">₹140</span>
+</div>
+</div>
+</div>
+<div class="menu-card">
+<div class="menu-emoji">🍫</div>
+<div class="menu-info">
+<h4>Hot Chocolate</h4>
+<p>Real dark cocoa, full-cream milk, and a pinch of sea salt on top. Kids love it. Adults secretly love it more.</p>
+<div class="menu-footer">
+<span class="tag">Family Fav</span>
+<span class="price">₹150</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-category">
+<h3>🧊 Cold Drinks</h3>
+<div class="menu-grid">
+<div class="menu-card">
+<div class="menu-emoji">🥤</div>
+<div class="menu-info">
+<h4>Cold Brew Coffee</h4>
+<p>Steeped slowly for 18 hours in cold water. Smooth, strong, and refreshing — perfect for hot afternoons.</p>
+<div class="menu-footer">
+<span class="tag">Summer Hit</span>
+<span class="price">₹180</span>
+</div>
+</div>
+</div>
+<div class="menu-card">
+<div class="menu-emoji">🍦</div>
+<div class="menu-info">
+<h4>Coffee Frappe</h4>
+<p>Blended espresso, milk, ice, and a swirl of whipped cream. It's basically dessert in a glass — and we're not sorry.</p>
+<div class="menu-footer">
+<span class="tag">Crowd Pleaser</span>
+<span class="price">₹200</span>
+</div>
+</div>
+</div>
+<div class="menu-card">
+<div class="menu-emoji">🍋</div>
+<div class="menu-info">
+<h4>Iced Lemon Tea</h4>
+<p>For when coffee isn't what you're after. Fresh brewed tea, a good squeeze of lemon, and just enough sweetness.</p>
+<div class="menu-footer">
+<span class="tag">Non-Coffee</span>
+<span class="price">₹110</span>
+</div>
+</div>
+</div>
+<div class="menu-card">
+<div class="menu-emoji">🥭</div>
+<div class="menu-info">
+<h4>Mango Smoothie</h4>
+<p>Made with real Alphonso mangoes when in season. Thick, fruity, and sunshine in every sip.</p>
+<div class="menu-footer">
+<span class="tag">Seasonal</span>
+<span class="price">₹170</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-category">
+<h3>🍞 Bites & Snacks</h3>
+<div class="menu-grid">
+<div class="menu-card">
+<div class="menu-emoji">🥐</div>
+<div class="menu-info">
+<h4>Butter Croissant</h4>
+<p>Baked fresh every morning. Flaky on the outside, soft on the inside. Best enjoyed warm with a flat white.</p>
+<div class="menu-footer">
+<span class="tag">Freshly Baked</span>
+<span class="price">₹90</span>
+</div>
+</div>
+</div>
+<div class="menu-card">
+<div class="menu-emoji">🧁</div>
+<div class="menu-info">
+<h4>Chocolate Muffin</h4>
+<p>Dense, moist, and packed with real chocolate chips. Our most re-ordered item — once is never enough.</p>
+<div class="menu-footer">
+<span class="tag">Must Try</span>
+<span class="price">₹100</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="contact-section">
+<h2>Come Find Us</h2>
+<p>We're tucked in a cosy corner of the city, and we'd love to see you. No reservations needed — just walk in.</p>
+<div class="contact-details">
+<div class="contact-item">📍 <strong>12, MG Road, Bengaluru — 560001</strong></div>
+<div class="contact-item">⏰ <strong>Mon – Sun: 8:00 AM – 10:00 PM</strong></div>
+<div class="contact-item">📞 <strong>+91 98765 43210</strong></div>
+</div>
+</section>
 <footer>
-<p>&copy; 2024 Coffee House. All rights reserved.</p>
+<p>Made with ☕ and love &nbsp;|&nbsp; &copy; 2024 Coffee House. All rights reserved.</p>
 </footer>
 </body>
 </html>
